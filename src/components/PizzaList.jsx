@@ -13,6 +13,24 @@ export default function PizzaList() {
         <strong>{pizzas.length}</strong> pizzas in total.
       </p>
       <p>TODO: the list of pizzas</p>
+      <ul>
+        {pizzas.map((pizza) => (
+          <li key={pizza.id}>
+            <h2>{pizza.name}</h2>
+            <div>
+              <img
+                src={pizza.image}
+                style={{ maxWidth: 400 }}
+                alt={pizza.name}
+              />
+            </div>
+            <p>{pizza.description}</p>
+            <span>
+              Bought: <strong>{pizza.bought}</strong> times!
+            </span>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
