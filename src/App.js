@@ -1,11 +1,11 @@
-import { AddPizzaForm } from "./components/AddPizzaForm";
-import PizzaList from "./components/PizzaList";
+import { PizzaList, AddPizzaForm, RestaurantsList } from "./components";
 
 function App() {
   return (
     <div className="App">
       <PizzaList />
       <AddPizzaForm />
+      <RestaurantsList />
     </div>
   );
 }
